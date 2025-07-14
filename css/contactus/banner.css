@@ -1,0 +1,163 @@
+/* General styles for the page */
+
+.Banner {
+  position: relative;
+  width: auto;
+  background-image: url('../../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 80px 80px 80px;
+}
+
+.Banner-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: start;
+  border-radius: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: black;
+}
+
+.Banner-content p {
+  font-size: 18px;
+  color: #590a02;
+  font-weight: 500;
+}
+
+.banner-btns {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #7d2c25;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  border: none;
+  width: max-content;
+  margin-bottom: 30px;
+}
+
+.cta-button:hover {
+  background-color: #a81f12;
+}
+
+
+@media(max-width: 768px) {
+  .Banner {
+    padding: 160px 40px 40px 40px;
+  }
+
+  .Banner-content {
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .Banner-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .Banner-content p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .banner-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: #7d2c25;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    border: none;
+    width: max-content;
+    margin-bottom: 30px;
+  }
+
+  .cta-button:hover {
+    background-color: #a81f12;
+  }
+}
+
+@media(max-width: 600px) {
+  .Banner {
+    padding: 120px 20px 20px 20px;
+  }
+
+  .Banner-content {
+    padding: 10px;
+  }
+
+  .Banner-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .Banner-content p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+}
+
+@media(max-width: 600px) {
+  .Banner {
+    padding: 120px 20px 20px 20px;
+  }
+
+  .Banner-content {
+    padding: 10px;
+  }
+
+  .Banner-content h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .Banner-content p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .cta-button {
+
+    padding: 8px 14px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+}

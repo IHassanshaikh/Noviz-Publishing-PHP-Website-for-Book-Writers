@@ -1,0 +1,328 @@
+/* Dual Column Section Styles */
+.dual-column-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: auto;
+  background-color: #f2f5f6;
+  gap: 60px;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px 60px;
+
+}
+
+.text-content {
+  max-width: 650px;
+}
+
+.image-content {
+  width: 300px;
+  position: absolute;
+  right: 110px;
+  top: -110px;
+}
+
+.image-content img {
+  width: 100%;
+}
+
+.section-1 {
+  position: relative;
+  background: linear-gradient(135deg, #7b2c25, #492322);
+  color: white;
+  border-radius: 0 0 0 40px;
+  padding: 40px;
+  width: 80%;
+  align-self: flex-end;
+  z-index: 100;
+}
+
+/* Section 1 Specific Styles */
+.section-1 h1 {
+  font-size: 1.6rem;
+}
+
+.section-1 .description {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.request-btn {
+  background: #ffdcdb;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 6px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  gap: 10px;
+  height: 40px;
+}
+
+.section-2 {
+  position: relative;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+/* Section 2 Specific Styles */
+.section-2 h2 {
+  font-size: 1.8rem;
+  color: #000000;
+  width: 500px;
+}
+
+.section-2 .consultancy-description {
+  font-size: 1rem;
+  color: #980000;
+  margin-bottom: 20px;
+  padding: 0px 180px 0px 0;
+}
+
+.image-content2 img {
+  width: 350px;
+}
+
+/* Button Styles */
+.button-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.secondary-btn {
+  background-color: #7b2c25;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.phone-icon {
+  font-size: 1.2rem;
+}
+
+.secondary-btn:hover {
+  background-color: #c0392b;
+}
+
+.blob-1 {
+  position: absolute;
+  left: 220px;
+  width: 200px;
+  height: 200px;
+  top: -200px;
+}
+
+.image-content2 {
+  z-index: 100;
+}
+
+@media (max-width: 1024px) {
+  .image-content {
+    width: 340px;
+    position: absolute;
+    right: 0px;
+    top: -32px;
+  }
+
+  .image-content img {
+    width: 74%;
+  }
+
+  .image-content2 {
+    text-align: center;
+  }
+
+  .image-content2 img {
+    width: 250px;
+  }
+
+  .section-2 {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+
+  .section-2 h2 {
+    font-size: 1.6rem;
+    width: auto;
+  }
+
+  .text-content {
+    max-width: auto;
+  }
+
+  .section-2 .consultancy-description {
+    font-size: 0.9rem;
+    margin: 20px 0;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .image-content {
+    display: none;
+  }
+
+  .image-content2 {
+    text-align: center;
+  }
+
+  .image-content2 img {
+    width: 250px;
+  }
+
+  .section-1 h1 {
+    font-size: 1.2rem;
+  }
+
+
+  .request-btn {
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+    border-radius: 30px;
+    height: 30px;
+  }
+
+  .section-2 {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+
+  .section-2 h2 {
+    font-size: 1.6rem;
+    width: auto;
+  }
+
+  .text-content {
+    max-width: auto;
+  }
+
+  .section-2 .consultancy-description {
+    font-size: 0.8rem;
+    margin: 20px 0;
+  }
+
+  .section-2 {
+    position: relative;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* Section 2 Specific Styles */
+  .section-2 h2 {
+    font-size: 1.4rem;
+    width: auto;
+  }
+
+  .section-2 .consultancy-description {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .button-group {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .dual-column-section {
+
+    gap: 10px;
+  }
+
+
+  .image-content2 img {
+    display: none;
+  }
+
+  .section-1 h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+
+  .request-btn {
+    padding: 4px 10px;
+    font-size: 10px;
+    height: 30px;
+    gap: 4px;
+  }
+
+  .section-1 {
+    padding: 22px;
+    width: 78%;
+
+  }
+
+  .section-1 .description {
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+
+  .section-2 {
+    padding: 10px;
+  }
+
+  .section-2 h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-2 .consultancy-description {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+
+  .button-group {
+    gap: 10px;
+  }
+
+  .secondary-btn {
+    background-color: #7b2c25;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .phone-icon {
+    font-size: 1rem;
+  }
+
+  .blob-1 {
+    position: absolute;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    top: -130px;
+  }
+}

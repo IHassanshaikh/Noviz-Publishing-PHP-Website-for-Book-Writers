@@ -1,0 +1,145 @@
+/* General styles for the page */
+
+.Banner {
+  position: relative;
+  width: auto;
+  background-image: url('../../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 80px 80px 80px;
+}
+
+.Banner-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Banner-content h1 {
+  font-size: 36px;
+  color: black;
+}
+
+.Banner-content {
+  font-size: 18px;
+  color: #590a02;
+  font-weight: 500;
+}
+
+.banner-btns {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #7d2c25;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  border: none;
+  width: max-content;
+  margin-bottom: 30px;
+}
+
+.cta-button:hover {
+  background-color: #a81f12;
+}
+
+.who-are-we {
+  /* background-image: url("../images/background.jpg"); */
+  background-color: #EEE6D6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 100px;
+}
+
+.wrv-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 676px;
+  text-align: start;
+  padding: 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.wrv-content h2 {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.wrv-content p {
+  font-size: 15px;
+  color: #7d2c25;
+  line-height: 1.6;
+}
+
+.who-are-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.who-are-img img {
+
+  width: 350px;
+}
+
+
+@media (max-width: 768px) {
+
+  .Banner {
+    padding: 140px 80px 60px 80px;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .Banner {
+    padding: 140px 20px 60px 20px;
+  }
+
+  .Banner-content h1 {
+    font-size: 24px;
+  }
+
+  .banner-btns {
+    gap: 10px;
+  }
+
+  .cta-button {
+
+    padding: 10px 16px;
+    font-size: 10px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+  }
+
+  .Banner-content {
+    padding: 10px;
+    gap: 10px;
+
+  }
+}

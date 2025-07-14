@@ -1,0 +1,161 @@
+.production {
+  position: relative;
+  background-image: url('../../images/writting-bg.jpg');
+  background-image: url('../../images/writting-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0 20px;
+  height: 350px;
+}
+
+.production::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.production-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+  gap: 10px;
+}
+
+.production-main img {
+  width: 300px;
+}
+
+.production-main p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  line-height: 1.4;
+}
+
+.steps {
+  position: relative;
+  background: linear-gradient(125deg, #81332e 70%, #472322);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 200px;
+  padding: 30px;
+}
+
+.production-card {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  top: -128px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: linear-gradient(125deg, #111111 10%, #928585 100%);
+  flex-direction: column;
+  padding: 8px 20px 26px 20px;
+  width: 210px;
+  height: 220px;
+  border-radius: 25px;
+  color: white;
+  z-index: 100;
+}
+
+.card .card-no {
+  position: absolute;
+  top: -20px;
+  border-radius: 100px;
+  padding: 14px 18px;
+  font-size: 14px;
+  background-color: #94C1D6;
+  z-index: 100;
+  color: white;
+}
+
+.card img {
+  width: 100px;
+}
+
+.card h3 {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.card p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 100;
+  font-family: system-ui;
+  width: 180px;
+}
+
+
+@media(max-width: 1024px) {
+
+  .production {
+    height: 300px;
+  }
+
+  .steps {
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+  }
+
+
+  .production-card {
+    position: static;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .production-main {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .production-main img {
+    width: 240px;
+  }
+
+  .production-main p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+}
+
+@media(max-width: 580px) {
+  .production {
+    height: 180px;
+  }
+
+  .production-main img {
+    width: 200px;
+  }
+}
