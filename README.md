@@ -12,7 +12,7 @@
 📸 Preview
 Here's a glimpse of the homepage:
 
-<img src="novis1.PNG" alt="Noviz Homepage" width="100%" />
+<img src="novis4.PNG" alt="Noviz Homepage" width="100%" />
 
 <img src="https://your-image-url.com/image.png" alt="Noviz Homepage" width="100%" />
 
